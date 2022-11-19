@@ -34,4 +34,5 @@ if __name__ == '__main__':
     path_to_file = "D:/Files/Hello world.txt"
     token='здесь мог быть ваш токен'
     uploader = YaUploader(token)
-    result = uploader.upload(path_to_file, path_to_file)
+    my_list = path_to_file.split('/')
+    result = uploader.upload(path_to_file, my_list[-1])
